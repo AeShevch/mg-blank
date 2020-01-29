@@ -18,14 +18,15 @@
         "eslint-plugin-no-loops": "0.3.0",
         "eslint-plugin-prettier": "3.1.2",
         "eslint-plugin-sonarjs": "0.5.0",
+        "htmlhint": "^0.11.0",
         "prettier": "^1.19.1",
         "stylelint": "^13.0.0",
-        "stylelint-config-htmlacademy": "^0.1.4"
+        "stylelint-config-htmlacademy": "^0.1.4",
+        "stylelint-config-prettier": "^8.0.1",
+        "stylelint-prettier": "^1.1.2"
     },
     "license": "MIT",
-    "dependencies": {
-        "htmlhint": "^0.11.0"
-    },
+    "dependencies": {},
     "scripts": {
         "test": "eslint js/",
         "prettier": "prettier"

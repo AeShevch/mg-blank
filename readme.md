@@ -1,6 +1,11 @@
 Prettier - автоформатирование:
+
 Phpstorm - https://www.jetbrains.com/help/phpstorm/prettier.html
-Visual Studio Code - https://github.com/prettier/prettier-vscode
+
+VS Code - https://github.com/prettier/prettier-vscode
 
 Stylelint:
-VsCode https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+Vs Code https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+
+htmlhint:
+VS Code: https://github.com/Microsoft/vscode-htmlhint
