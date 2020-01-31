@@ -33,6 +33,9 @@
 // Установка значений в метатеги title, keywords, description.
 mgSEO($data);
 ?>
+<?php
+// Функция console_log выводит php-массив, указанный параметром, в консоль браузера
+console_log($data); ?>
 
 <?php
 // Карусель новинок

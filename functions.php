@@ -100,3 +100,8 @@ function getMainStyleLink() {
   }
 }
 
+function console_log($var) {
+    $str = str_replace('&nbsp;', '', json_encode($var, true));
+    echo "<script>window.str={$str};console.log(str);</script>";
+}
+
