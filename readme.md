@@ -8,6 +8,9 @@
 
 htmlhint:
 VS Code: https://github.com/Microsoft/vscode-htmlhint
+Sublime: https://github.com/htmlhint/SublimeLinter-contrib-htmlhint
+Webpack: https://github.com/htmlhint/htmlhint-loader
+Gulp: https://github.com/htmlhint/gulp-htmlhint-inline
 
 #Полезная информация 
 
