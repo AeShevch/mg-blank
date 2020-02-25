@@ -93,3 +93,40 @@ http://wiki.moguta.ru/devhelp/templates/direktivy-dvijka
 - `picturesCategory` - Выводить список подкатегорий;
 
 
+## Настройки движка, которые должны поддерживаться шаблоном
+### Настройки отображения сайта:
+- Название сайта / Название компании `shopName`/`sitename`
+- Логотип сайта `shopLogo`
+- Фон сайта / Цвет фона сайта `<?php backgroundSite(); ?>` к body
+- Телефон `shopPhone`
+- Адрес `shopAddress`
+- Время работы:
+```
+<?php
+$workTime = explode(',', MG::getSetting('timeWork'));
+$workTimeDays = explode(',', MG::getSetting('timeWorkDays'));
+foreach ($workTime as $key => $time) { ?>
+  <div class="c-contact__row">
+    <div class="c-contact__schedule">
+          <span class="c-contact__span">
+              <?php echo !empty($workTimeDays[$key]) ? htmlspecialchars($workTimeDays[$key]) : ''; ?>
+          </span>
+      <?php echo htmlspecialchars($workTime[$key]); ?>
+    </div>
+  </div>
+<?php } ?>
+```
+- Запрашивать подтверждение пользовательского соглашения `printAgreement`
+
+### Фильтры по сайту
+- Выводить фильтры в корне каталога:
+`if(MG::getSetting('filterCatalogMain') != "true" && $_REQUEST['category_id'] === 0)`
+Всё остальное в фильтрах, если используется стандартный компонент, должно работать, но всё равно нужно проверять.
+
+### Опции сайта
+- Показывать покупателю сообщение о добавлении товара в корзину
+- Увеличивать изображение карточки товара при наведении курсора
+- Включить возможность сравнивать товары 
+- Выводить каталог на главной странице
+- Показывать список вложенных категорий на страницах каталога товаров
+- Показывать кнопку «Купить» в миникарточках товаров
