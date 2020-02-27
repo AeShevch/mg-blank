@@ -274,3 +274,6 @@ if (
 // Подключаем ReCaptcha, если включено в настройках
 echo MG::printReCaptcha(); ?>
 ```
+
+
+
